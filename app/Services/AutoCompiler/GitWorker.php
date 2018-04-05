@@ -20,11 +20,11 @@ class GitWorker {
         $path = storage_path('app/');
 
         $this->gitRepository->setEnvVar('HOME', $path.$folderName);
-        $git = $this->gitRepository->cloneRepository('https://goranbosic:meansko87@bitbucket.org/openratio/borna-ios-android.git',
+        $git = $this->gitRepository->cloneRepository('https://@bitbucket.org/openratio/borna-ios-android.git',
             $path.$folderName);
 
-        $git->config('user.name', 'goran.bosic');
-        $git->config('user.email', 'goran.bosic@openratio.com');
+        $git->config('user.name',);
+        $git->config('user.email', '');
         return $git->isCloned();
 
     }
